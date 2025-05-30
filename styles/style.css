@@ -112,6 +112,7 @@
 .contour {
   width: 24px;
   height: 27px;
+  transition: fill .3s .06s linear;
 }
 
 .sparks {
@@ -164,17 +165,12 @@
   fill: var(--heart-color);
 }
 
-.contour {
-  transition: fill .3s .06s linear;
-}
-
 .like-icon.is-liked .contour {
   fill: var(--heart-color);
 }
 
 .card__icon-button {
   display: flex;
-  border: none;
   background: transparent;
   max-block-size: 39px;
   align-self: end;
