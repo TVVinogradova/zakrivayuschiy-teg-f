@@ -1,1 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --accent-text-ff: 'Press Start 2P Regular';
+    --content-text-ff: 'Inter Variable';
+    --content-font-weight: 400;
+    --title-font-weight: 700;
+    --text-color: #000;
+    --bg-image: repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px), 
+    repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+    --bg-color: #fff;
+    --content-font-size: 18px;
+    --watermark-stroke-color: #3d45c0; /*цвет отличный от макета, т.к. при исп-ии референа на моих картинках в сочетании цветов теряется текст*/
+    --cards-inline-size: clamp(375px, 49vw, 700px);
+    --padding-block-header: clamp(120px, 9vw, 128px);
+    --padding-inline-header: clamp(14px, 8vw, 120.5px);
+    --cards-block-size: clamp(327px, 38vh, 368px);
+    --heart-color: red;
+    --core-color: #fff;
+    --contour-color: #000;
+}
