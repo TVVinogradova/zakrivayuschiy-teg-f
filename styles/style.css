@@ -309,7 +309,7 @@
 .modal-text {
   text-transform: uppercase;
   text-wrap: wrap;
-  line-height: 150%; 
+  line-height: 150%;
 }
 
 dialog[open] {
