@@ -89,6 +89,9 @@
   position: relative;
   color: #fff;
   mix-blend-mode: difference;
+  font-family: var(--accent-text-ff);
+  font-size: 14px;
+  font-weight: var(--content-font-weight);
 }
 
 .like-block {
@@ -112,7 +115,7 @@
 .contour {
   width: 24px;
   height: 27px;
-  transition: fill .3s .06s linear;
+  transition: fill .3s .06s ease-in;
 }
 
 .sparks {
@@ -132,29 +135,14 @@
   transform-origin: center;
 }
 
-.main-body {
-  transition: fill .3s .05s linear;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--contour-color);
-}
-
-.like-icon:active .main-body {
-  fill: var(--heart-color);
-}
-
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-color);
-}
-
 .core {
-  transition: fill .3s 0s linear;
+  fill: transparent;
+  transition: fill .3s linear;
 }
 
 .like-icon:hover .core {
   fill: var(--contour-color);
+  transition: .3s linear;
 }
 
 .like-icon:active .core {
@@ -166,6 +154,22 @@
 }
 
 .like-icon.is-liked .contour {
+  fill: var(--heart-color);
+}
+.main-body {
+  fill: transparent;
+  transition: fill .3s .05s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--contour-color);
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart-color);
+}
+
+.like-icon.is-liked .main-body {
   fill: var(--heart-color);
 }
 
@@ -302,16 +306,10 @@
   mix-blend-mode: difference;
 }
 
-.button__text-floppy {
-  font-family: var(--accent-text-ff);
-  font-size: 14px;
-  font-weight: var(--content-text-font-weight);
-  line-height: 19px;
-  text-wrap: nowrap;
-  z-index: 1;
-  position: relative;
-  color: #fff;
-  mix-blend-mode: difference;
+.modal-text {
+  text-transform: uppercase;
+  text-wrap: wrap;
+  line-height: 150%; 
 }
 
 dialog[open] {
@@ -328,16 +326,6 @@ dialog[open] {
 .floppy-modal {
   inline-size: 39px;
   block-size: 39px;
-}
-
-.modal-icon-text {
-  font-size: 14px;
-  font-family: var(--accent-text-ff);
-  text-transform: uppercase;
-  line-height: 150%;
-  font-weight: var(--content-text-font-weight);
-  color: #fff;
-  mix-blend-mode: difference;
 }
 
 .modal-button {
